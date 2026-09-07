@@ -107,17 +107,6 @@ export default function Image() {
             >
               SOLAR
             </div>
-
-            <div
-              style={{
-                marginTop: 40,
-                fontSize: 34,
-                color: "#365a7f",
-                fontFamily: "Arial, sans-serif",
-              }}
-            >
-              Ð¤Ð¾Ñ‚Ð¾Ð²Ð¾Ð»Ñ‚Ð°Ð¸Ñ‡Ð½Ð¸ ÑÐ¸ÑÑ‚ÐµÐ¼Ð¸ Ð·Ð° Ð´Ð¾Ð¼Ð° Ð¸ Ð±Ð¸Ð·Ð½ÐµÑÐ°
-            </div>
           </div>
         </div>
       </div>
