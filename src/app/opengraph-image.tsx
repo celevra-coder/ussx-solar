@@ -59,9 +59,8 @@ export default function Image() {
                 background: "#234f7f",
                 border: "8px solid #bcc9d3",
                 transform: "rotate(-8deg)",
-                display: "grid",
-                gridTemplateColumns: "repeat(4, 1fr)",
-                gridTemplateRows: "repeat(2, 1fr)",
+                display: "flex",
+                flexWrap: "wrap",
                 gap: 4,
                 padding: 6,
                 boxShadow: "0 18px 30px rgba(23,50,79,.18)",
@@ -71,6 +70,8 @@ export default function Image() {
                 <div
                   key={i}
                   style={{
+                    width: 46,
+                    height: 46,
                     border: "2px solid rgba(230,239,246,.8)",
                     background: "#173b63",
                   }}
@@ -115,7 +116,7 @@ export default function Image() {
                 fontFamily: "Arial, sans-serif",
               }}
             >
-              Фотоволтаични системи за дома и бизнеса
+              Ð¤Ð¾Ñ‚Ð¾Ð²Ð¾Ð»Ñ‚Ð°Ð¸Ñ‡Ð½Ð¸ ÑÐ¸ÑÑ‚ÐµÐ¼Ð¸ Ð·Ð° Ð´Ð¾Ð¼Ð° Ð¸ Ð±Ð¸Ð·Ð½ÐµÑÐ°
             </div>
           </div>
         </div>
