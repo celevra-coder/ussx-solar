@@ -3666,3 +3666,37 @@ html[data-theme="dark"] .ussx-logo__mark polygon:first-of-type {
 html[data-theme="dark"] .ussx-logo__mark polygon:nth-of-type(2) {
   filter: drop-shadow(-1px 5px 5px rgba(0,0,0,.32));
 }
+
+/* ===== Header controls — unified dark navy ===== */
+html[data-theme="light"] .theme-toggle,
+html[data-theme="light"] .signup-button,
+html[data-theme="light"] .phone-circle {
+  background: #102846;
+  color: #ffffff;
+  border-color: #102846;
+}
+
+html[data-theme="light"] .theme-toggle {
+  box-shadow: 0 8px 22px rgba(16,40,70,.12);
+}
+
+html[data-theme="light"] .theme-toggle span {
+  color: rgba(255,255,255,.72);
+}
+
+html[data-theme="light"] .theme-toggle .theme-active {
+  background: rgba(255,255,255,.16);
+  color: #ffffff;
+  box-shadow: none;
+}
+
+html[data-theme="light"] .phone-circle {
+  color: #ffffff;
+}
+
+html[data-theme="light"] .theme-toggle:hover,
+html[data-theme="light"] .signup-button:hover,
+html[data-theme="light"] .phone-circle:hover {
+  background: #17395f;
+  border-color: #17395f;
+}
