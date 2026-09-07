@@ -3700,3 +3700,54 @@ html[data-theme="light"] .phone-circle:hover {
   background: #17395f;
   border-color: #17395f;
 }
+
+/* ===== Revert header controls to previous light style ===== */
+html[data-theme="light"] .theme-toggle {
+  background: rgba(255,255,255,.28);
+  color: #102846;
+  border-color: rgba(16,40,70,.17);
+  box-shadow: none;
+}
+
+html[data-theme="light"] .theme-toggle span {
+  color: #102846;
+}
+
+html[data-theme="light"] .theme-toggle .theme-active {
+  background: rgba(255,255,255,.9);
+  color: #102846;
+  box-shadow: 0 2px 8px rgba(16,40,70,.09);
+}
+
+html[data-theme="light"] .signup-button {
+  background: #102846;
+  color: #ffffff;
+  border-color: #102846;
+}
+
+html[data-theme="light"] .phone-circle {
+  background: transparent;
+  color: #102846;
+  border-color: rgba(16,40,70,.17);
+}
+
+html[data-theme="light"] .theme-toggle:hover,
+html[data-theme="light"] .phone-circle:hover {
+  background: rgba(255,255,255,.45);
+  border-color: rgba(16,40,70,.24);
+}
+
+/* ===== Hero buttons — dark navy ===== */
+.hero .primary-button,
+.hero .secondary-button {
+  background: #102846;
+  color: #ffffff;
+  border-color: #102846;
+}
+
+.hero .primary-button:hover,
+.hero .secondary-button:hover {
+  background: #17395f;
+  border-color: #17395f;
+  color: #ffffff;
+}
