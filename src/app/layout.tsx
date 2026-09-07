@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Geist, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/social-preview",
         width: 1200,
         height: 630,
         alt: "USS X Solar",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "USS X Solar",
     description: "Фотоволтаични системи за дома и бизнеса.",
-    images: ["/opengraph-image"],
+    images: ["/social-preview"],
   },
 };
 
