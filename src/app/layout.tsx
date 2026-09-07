@@ -15,9 +15,36 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ussxsolar.com"),
+
   title: "USS-X Solar | Фотоволтаични системи",
+
   description:
     "Проектиране, доставка, изграждане и поддръжка на фотоволтаични системи.",
+
+  openGraph: {
+    title: "USS X Solar",
+    description: "Фотоволтаични системи за дома и бизнеса.",
+    url: "https://ussxsolar.com",
+    siteName: "USS X Solar",
+    locale: "bg_BG",
+    type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "USS X Solar",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "USS X Solar",
+    description: "Фотоволтаични системи за дома и бизнеса.",
+    images: ["/opengraph-image"],
+  },
 };
 
 export default function RootLayout({
