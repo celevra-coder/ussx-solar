@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
@@ -55,7 +55,7 @@ export default function Header() {
 
         <a className="signup-button" href="#contact">
           <span className="signup-dot">•</span>
-          Запиши се
+          Свържи се
         </a>
 
         <a

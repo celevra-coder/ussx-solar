@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import ProcessStory from "./ProcessStory";
 import ContactForm from "./ContactForm";
 import Header from "./Header";
 import HeroVideo from "./HeroVideo";
@@ -39,27 +40,6 @@ export default function Home() {
           <div className="hero-media"><HeroVideo /></div>
 </div>
 </section>
-
-      <section className="numbers">
-        <div className="numbers-intro">
-          <span className="section-label">Към днешна дата</span>
-        </div>
-
-        <div className="number">
-          <strong>270+</strong>
-          <span>реализирани централи</span>
-        </div>
-
-        <div className="number">
-          <strong>2</strong>
-          <span>екипа по 6 монтажници</span>
-        </div>
-
-        <div className="number">
-          <strong>37</strong>
-          <span>централи на поддръжка</span>
-        </div>
-      </section>
 
       <section className="services" id="services">
         <div className="section-title">
@@ -103,7 +83,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="projects" id="projects">
+            <ProcessStory />
+
+<section className="projects" id="projects">
   <div className="gallery-divider">
     <span>РЕАЛИЗИРАНИ ОБЕКТИ</span>
   </div>

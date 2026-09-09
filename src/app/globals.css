@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #f5f1e9;
   --bg-light: #faf8f3;
   --blue: #102846;
@@ -3750,4 +3750,634 @@ html[data-theme="light"] .phone-circle:hover {
   background: #17395f;
   border-color: #17395f;
   color: #ffffff;
+}
+
+/* =========================================================
+   USS-X SOLAR — INTERACTIVE PROCESS STORY
+   ========================================================= */
+
+.process-story {
+  background: #07152a;
+  color: #f5f1e9;
+  padding: 110px 16.5vw 0;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.process-story__intro {
+  max-width: 820px;
+  padding-bottom: 90px;
+}
+
+.process-story__eyebrow {
+  display: block;
+  margin-bottom: 22px;
+  color: #d7af47;
+  font-size: 11px;
+  letter-spacing: .26em;
+  font-weight: 600;
+}
+
+.process-story__intro h2 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(48px, 5.3vw, 82px);
+  line-height: .98;
+  font-weight: 400;
+  letter-spacing: -.025em;
+}
+
+.process-story__intro h2 em {
+  color: #9db2cc;
+  font-weight: 400;
+}
+
+.process-story__intro p {
+  max-width: 670px;
+  margin: 28px 0 0;
+  color: #aebbd0;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.process-story__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, .95fr);
+  gap: 8vw;
+  align-items: start;
+}
+
+.process-visual-wrap {
+  position: sticky;
+  top: 92px;
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+}
+
+.process-visual {
+  width: 100%;
+  min-height: 560px;
+  padding: 34px 34px 30px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 74% 12%, rgba(215,175,71,.09), transparent 28%),
+    linear-gradient(145deg, #0a1d35, #07152a);
+  box-shadow: 0 35px 80px rgba(0,0,0,.22);
+}
+
+.process-visual__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255,255,255,.09);
+}
+
+.process-visual__top span {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  letter-spacing: .16em;
+}
+
+.process-visual__top small {
+  color: #8195ad;
+  font-size: 9px;
+  letter-spacing: .2em;
+}
+
+.process-diagram {
+  position: relative;
+  padding: 35px 0 22px;
+}
+
+.process-line {
+  position: absolute;
+  left: 28px;
+  top: 55px;
+  bottom: 43px;
+  width: 1px;
+  background: rgba(255,255,255,.14);
+}
+
+.process-node {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  align-items: center;
+  gap: 18px;
+  min-height: 68px;
+  opacity: .34;
+  transition:
+    opacity .45s ease,
+    transform .45s ease;
+}
+
+.process-node + .process-node {
+  margin-top: 9px;
+}
+
+.process-node__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.14);
+  background: #0b1f39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8096b0;
+  transition:
+    background .45s ease,
+    color .45s ease,
+    border-color .45s ease,
+    box-shadow .45s ease,
+    transform .45s ease;
+}
+
+.process-node__icon svg {
+  width: 27px;
+  height: 27px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.process-node__copy {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.process-node__copy strong {
+  width: 29px;
+  color: #71869f;
+  font-size: 11px;
+  letter-spacing: .1em;
+}
+
+.process-node__copy span {
+  color: #9aaabd;
+  font-size: 14px;
+  letter-spacing: .04em;
+}
+
+.process-node.is-done {
+  opacity: .62;
+}
+
+.process-node.is-active {
+  opacity: 1;
+  transform: translateX(8px);
+}
+
+.process-node.is-active .process-node__icon {
+  background: #d7af47;
+  border-color: #d7af47;
+  color: #07152a;
+  transform: scale(1.08);
+  box-shadow:
+    0 0 0 7px rgba(215,175,71,.08),
+    0 12px 30px rgba(215,175,71,.18);
+}
+
+.process-node.is-active .process-node__copy strong {
+  color: #d7af47;
+}
+
+.process-node.is-active .process-node__copy span {
+  color: #f4efe7;
+}
+
+.process-visual__status {
+  margin-top: 15px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255,255,255,.09);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.process-visual__status span {
+  color: #71869f;
+  font-size: 10px;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+.process-visual__status strong {
+  color: #d7af47;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.process-copy {
+  position: relative;
+}
+
+.process-copy__step {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+  opacity: .26;
+  transform: translateY(35px);
+  transition:
+    opacity .5s ease,
+    transform .5s ease;
+}
+
+.process-copy__step.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.process-copy__number {
+  font-family: var(--font-serif);
+  color: #d7af47;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.process-copy__line {
+  width: 54px;
+  height: 1px;
+  margin: 25px 0 22px;
+  background: #d7af47;
+}
+
+.process-copy__label {
+  color: #8ba0b9;
+  font-size: 10px;
+  letter-spacing: .25em;
+}
+
+.process-copy__step h3 {
+  max-width: 570px;
+  margin: 20px 0 20px;
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 4vw, 63px);
+  line-height: 1.02;
+  font-weight: 400;
+  letter-spacing: -.02em;
+}
+
+.process-copy__step p {
+  max-width: 570px;
+  margin: 0;
+  color: #afbdd0;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .process-story {
+    padding: 85px 7vw 0;
+  }
+
+  .process-story__intro {
+    padding-bottom: 55px;
+  }
+
+  .process-story__layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .process-visual-wrap {
+    position: sticky;
+    top: 70px;
+    height: auto;
+    z-index: 3;
+    padding-bottom: 18px;
+    background: #07152a;
+  }
+
+  .process-visual {
+    min-height: 0;
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .process-visual__top,
+  .process-visual__status {
+    display: none;
+  }
+
+  .process-diagram {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    padding: 0;
+  }
+
+  .process-line {
+    display: none;
+  }
+
+  .process-node {
+    display: flex;
+    min-height: 0;
+    justify-content: center;
+  }
+
+  .process-node + .process-node {
+    margin-top: 0;
+  }
+
+  .process-node__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .process-node__copy {
+    display: none;
+  }
+
+  .process-node.is-active {
+    transform: translateY(-4px);
+  }
+
+  .process-copy__step {
+    min-height: 76vh;
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .process-story {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .process-story__intro h2 {
+    font-size: 46px;
+  }
+
+  .process-story__intro p {
+    font-size: 15px;
+  }
+
+  .process-visual {
+    padding: 14px 10px;
+  }
+
+  .process-diagram {
+    gap: 4px;
+  }
+
+  .process-node__icon {
+    width: 39px;
+    height: 39px;
+  }
+
+  .process-node__icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .process-copy__number {
+    font-size: 58px;
+  }
+
+  .process-copy__step h3 {
+    font-size: 42px;
+  }
+
+  .process-copy__step p {
+    font-size: 15px;
+  }
+}
+
+
+/* ===== PROCESS VISUAL MAP ===== */
+
+.process-map {
+  width: 100%;
+  padding: 26px 28px 22px;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,.12);
+  background:
+    radial-gradient(circle at 20% 16%, rgba(215,175,71,.06), transparent 30%),
+    linear-gradient(145deg,#0c2039,#07152a);
+  box-shadow: 0 35px 90px rgba(0,0,0,.25);
+}
+
+.process-map__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px 20px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.process-map__heading span {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  letter-spacing: .14em;
+  color: #f4efe7;
+}
+
+.process-map__heading small {
+  font-size: 9px;
+  letter-spacing: .22em;
+  color: #71869f;
+}
+
+.process-map__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* път на проекта */
+
+.process-route {
+  fill: none;
+  stroke: rgba(157,178,204,.20);
+  stroke-width: 2;
+  stroke-dasharray: 5 8;
+}
+
+/* всички обекти */
+
+.process-object {
+  opacity: .27;
+  transition:
+    opacity .55s ease,
+    filter .55s ease;
+}
+
+.process-object .process-glow {
+  fill: rgba(215,175,71,0);
+  transition: fill .55s ease;
+}
+
+.process-shape,
+.process-panel {
+  fill: rgba(32,64,96,.72);
+  stroke: #8095ab;
+  stroke-width: 2;
+  transition:
+    fill .55s ease,
+    stroke .55s ease;
+}
+
+.process-detail,
+.process-chart,
+.process-check,
+.process-worker-line,
+.process-signal {
+  fill: none;
+  stroke: #91a7bd;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke .55s ease;
+}
+
+.process-wheel,
+.process-worker {
+  fill: #0b1c32;
+  stroke: #91a7bd;
+  stroke-width: 3;
+}
+
+.process-icon-ring {
+  fill: #0b1c32;
+  stroke: #91a7bd;
+  stroke-width: 2;
+}
+
+.process-signal-dot {
+  fill: #91a7bd;
+}
+
+.process-number {
+  fill: #7890a8;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: .1em;
+}
+
+.process-label {
+  fill: #71869f;
+  font-size: 10px;
+  letter-spacing: .15em;
+}
+
+/* активният обект */
+
+.process-object.is-active {
+  opacity: 1;
+  filter: url(#processGlow);
+}
+
+.process-object.is-active .process-glow {
+  fill: rgba(215,175,71,.08);
+}
+
+.process-object.is-active .process-shape,
+.process-object.is-active .process-panel {
+  fill: #173f68;
+  stroke: #e1b84d;
+}
+
+.process-object.is-active .process-detail,
+.process-object.is-active .process-chart,
+.process-object.is-active .process-check,
+.process-object.is-active .process-worker-line,
+.process-object.is-active .process-signal {
+  stroke: #e7bd4f;
+}
+
+.process-object.is-active .process-wheel,
+.process-object.is-active .process-worker,
+.process-object.is-active .process-icon-ring {
+  stroke: #e7bd4f;
+}
+
+.process-object.is-active .process-signal-dot {
+  fill: #e7bd4f;
+}
+
+.process-object.is-active .process-number,
+.process-object.is-active .process-label {
+  fill: #e7bd4f;
+}
+
+.process-map__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6px 3px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.process-map__footer span {
+  color: #6e849d;
+  font-size: 9px;
+  letter-spacing: .19em;
+}
+
+.process-map__footer strong {
+  color: #d7af47;
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+/* старата вертикална node схема вече не се използва */
+
+.process-diagram,
+.process-visual__top,
+.process-visual__status {
+  display: none !important;
+}
+
+.process-visual {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* mobile */
+
+@media (max-width: 900px) {
+  .process-map {
+    padding: 15px 14px 10px;
+    border-radius: 20px;
+  }
+
+  .process-map__heading {
+    padding-bottom: 10px;
+  }
+
+  .process-map__heading span {
+    font-size: 15px;
+  }
+
+  .process-map__heading small {
+    display: none;
+  }
+
+  .process-map__footer {
+    padding-top: 10px;
+  }
+
+  .process-map__footer span {
+    display: none;
+  }
+
+  .process-map__svg {
+    max-height: 260px;
+  }
 }
