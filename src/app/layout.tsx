@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import {SanityLive} from "@/sanity/lib/live";
 
 const geist = Geist({
   subsets: ["latin", "cyrillic"],
@@ -17,14 +18,14 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ussxsolar.com"),
 
-  title: "USS-X Solar | Фотоволтаични системи",
+  title: "USS-X Solar | Ð¤Ð¾Ñ‚Ð¾Ð²Ð¾Ð»Ñ‚Ð°Ð¸Ñ‡Ð½Ð¸ ÑÐ¸ÑÑ‚ÐµÐ¼Ð¸",
 
   description:
-    "Проектиране, доставка, изграждане и поддръжка на фотоволтаични системи.",
+    "ÐŸÑ€Ð¾ÐµÐºÑ‚Ð¸Ñ€Ð°Ð½Ðµ, Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°, Ð¸Ð·Ð³Ñ€Ð°Ð¶Ð´Ð°Ð½Ðµ Ð¸ Ð¿Ð¾Ð´Ð´Ñ€ÑŠÐ¶ÐºÐ° Ð½Ð° Ñ„Ð¾Ñ‚Ð¾Ð²Ð¾Ð»Ñ‚Ð°Ð¸Ñ‡Ð½Ð¸ ÑÐ¸ÑÑ‚ÐµÐ¼Ð¸.",
 
   openGraph: {
     title: "USS X Solar",
-    description: "Фотоволтаични системи за дома и бизнеса.",
+    description: "Ð¤Ð¾Ñ‚Ð¾Ð²Ð¾Ð»Ñ‚Ð°Ð¸Ñ‡Ð½Ð¸ ÑÐ¸ÑÑ‚ÐµÐ¼Ð¸ Ð·Ð° Ð´Ð¾Ð¼Ð° Ð¸ Ð±Ð¸Ð·Ð½ÐµÑÐ°.",
     url: "https://ussxsolar.com",
     siteName: "USS X Solar",
     locale: "bg_BG",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "USS X Solar",
-    description: "Фотоволтаични системи за дома и бизнеса.",
+    description: "Ð¤Ð¾Ñ‚Ð¾Ð²Ð¾Ð»Ñ‚Ð°Ð¸Ñ‡Ð½Ð¸ ÑÐ¸ÑÑ‚ÐµÐ¼Ð¸ Ð·Ð° Ð´Ð¾Ð¼Ð° Ð¸ Ð±Ð¸Ð·Ð½ÐµÑÐ°.",
     images: ["/social-preview"],
   },
 };
@@ -56,6 +57,7 @@ export default function RootLayout({
     <html lang="bg">
       <body className={`${geist.variable} ${cormorant.variable}`}>
         {children}
+        <SanityLive />
       </body>
     </html>
   );
