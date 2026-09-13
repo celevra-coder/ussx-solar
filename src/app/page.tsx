@@ -171,6 +171,60 @@ export default function Home() {
   </div>
 </section>
 
+      <section className="team-section" id="team">
+        <div className="team-inner">
+          <div className="team-heading">
+            <span className="team-kicker">— ХОРАТА ЗАД USS-X</span>
+            <h2>Екипът, на който можете да разчитате.</h2>
+            <p>
+              От първия разговор до пускането и поддръжката на системата —
+              зад всеки проект стоят хора, които поемат отговорност за работата си.
+            </p>
+          </div>
+
+          <div className="team-grid">
+            <article className="team-card">
+              <div className="team-photo">
+                <img src="/team/ivaylo-stefanov.webp" alt="Ивайло Стефанов" />
+              </div>
+              <div className="team-card-copy">
+                <h3>Ивайло Стефанов</h3>
+                <p>Управител на USS-X</p>
+              </div>
+            </article>
+
+            <article className="team-card">
+              <div className="team-photo">
+                <img src="/team/radost-dimitrova.webp" alt="Радост Димитрова" />
+              </div>
+              <div className="team-card-copy">
+                <h3>Радост Димитрова</h3>
+                <p>Онлайн съдържание</p>
+              </div>
+            </article>
+
+            <article className="team-card">
+              <div className="team-photo">
+                <img src="/team/pavlin-mihaylov.webp" alt="Павлин Михайлов" />
+              </div>
+              <div className="team-card-copy">
+                <h3>Павлин Михайлов</h3>
+                <p>Оперативен мениджър</p>
+              </div>
+            </article>
+
+            <article className="team-card">
+              <div className="team-photo">
+                <img src="/team/nikolay-kirov.webp" alt="Николай Киров" />
+              </div>
+              <div className="team-card-copy">
+                <h3>Николай Киров</h3>
+                <p>Главен логистик и доставки</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
       <section className="equipment" id="equipment">
   <div className="equipment-divider"></div>
 
