@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type {Metadata} from "next";
 import Logo from "../Logo";
 import {sanityFetch} from "@/sanity/lib/live";
@@ -71,16 +71,7 @@ export default async function BlogPage() {
       </section>
 
       <section className="blog-list">
-        {posts.length === 0 ? (
-          <div className="blog-empty">
-            <span>Блогът е готов.</span>
-            <h2>Очаквайте първите статии.</h2>
-            <p>
-              Публикуваните през USS-X Solar Studio материали ще се появяват
-              автоматично тук.
-            </p>
-          </div>
-        ) : (
+        {posts.length === 0 ? null : (
           <div className="blog-grid">
             {posts.map((post, index) => {
               const imageUrl = post.mainImage

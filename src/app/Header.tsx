@@ -53,6 +53,10 @@ export default function Header() {
           <span className={dark ? "theme-active" : ""}>☾</span>
         </button>
 
+        <a className="header-blog-link" href="/blog">
+          Блог
+        </a>
+
         <a className="signup-button" href="#contact">
           <span className="signup-dot">•</span>
           Свържи се

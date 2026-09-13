@@ -4922,3 +4922,32 @@ html[data-theme="light"] .phone-circle:hover {
 .team-section {
   border-top: 1px solid rgba(16, 40, 70, 0.14);
 }
+
+.header-blog-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: #102846;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: opacity .2s ease, background-color .2s ease;
+}
+
+.header-blog-link:hover {
+  background: rgba(16, 40, 70, 0.08);
+}
+
+[data-theme="dark"] .header-blog-link {
+  color: #f5f1e9;
+}
+
+@media (max-width: 650px) {
+  .header-blog-link {
+    padding: 0 10px;
+    font-size: 11px;
+  }
+}
