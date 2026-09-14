@@ -4817,7 +4817,7 @@ html[data-theme="light"] .phone-circle:hover {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -4949,5 +4949,24 @@ html[data-theme="light"] .phone-circle:hover {
   .header-blog-link {
     padding: 0 10px;
     font-size: 11px;
+  }
+}
+
+.gallery-description {
+  margin: 12px 0 0;
+  max-width: 620px;
+  color: rgba(16, 40, 70, 0.72);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+[data-theme="dark"] .gallery-description {
+  color: rgba(245, 241, 233, 0.68);
+}
+
+@media (max-width: 650px) {
+  .gallery-description {
+    font-size: 12px;
+    line-height: 1.55;
   }
 }

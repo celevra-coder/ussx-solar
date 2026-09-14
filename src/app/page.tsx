@@ -110,8 +110,15 @@ export default function Home() {
       </div>
       <div className="gallery-caption">
         <div>
-          <small>Жилищни системи</small>
-          <h3>Покривна фотоволтаична централа</h3>
+          <small>Реализиран проект</small>
+          <h3>Автосервиз, гр. Безмер</h3>
+          <p className="gallery-description">
+            Изток-юг ламинирана покривна система с 37 броя панела Jinko 460Wp.
+            Нисковолтов трифазен инвертор Deye 20kW и 6 батерии Deye по 5kWh.
+            Монтирана от USSX Solar (март – септември 2026 г.).
+            Системата покрива изцяло нуждите на сервиза, включително 2 подемника,
+            климатизация и осветление — най-високата сметка за периода е 20 евро.
+          </p>
         </div>
         <span className="gallery-arrow">↗</span>
       </div>
@@ -123,8 +130,13 @@ export default function Home() {
       </div>
       <div className="gallery-caption">
         <div>
-          <small>Хибридни решения</small>
-          <h3>Панели, инвертор и батерии</h3>
+          <small>Реализиран проект</small>
+          <h3>Частно домакинство, гр. Раковски</h3>
+          <p className="gallery-description">
+            20 панела Leapton 450Wp, инвертор Deye 10kW.
+            Батерия 16kWh, AC/DC табла със заземяване.
+            Най-високата сметка до момента (летен сезон) е 10 евро.
+          </p>
         </div>
         <span className="gallery-arrow">↗</span>
       </div>
@@ -136,8 +148,14 @@ export default function Home() {
       </div>
       <div className="gallery-caption">
         <div>
-          <small>Монтаж</small>
-          <h3>Професионална покривна конструкция</h3>
+          <small>Реализиран проект</small>
+          <h3>Помощна постройка, гр. Долна Оряховица</h3>
+          <p className="gallery-description">
+            Поради ограничено покривно пространство е изградена самостоятелна
+            конструкция с 18 панела, ориентирани на юг. DAH Solar 560Wp панели,
+            монофазен инвертор Deye 12kW. 1 батерия 16kWh, AC/DC табло с
+            автоматичен прекъсвач.
+          </p>
         </div>
         <span className="gallery-arrow">↗</span>
       </div>
@@ -149,8 +167,11 @@ export default function Home() {
       </div>
       <div className="gallery-caption">
         <div>
-          <small>Оборудване</small>
-          <h3>Инвертори и системи за съхранение</h3>
+          <small>Техническа поддръжка</small>
+          <h3>Винпром Карнобат</h3>
+          <p className="gallery-description">
+            Осъществяваме цялостна техническа поддръжка на обекта по доверие на клиента.
+          </p>
         </div>
         <span className="gallery-arrow">↗</span>
       </div>
@@ -163,7 +184,13 @@ export default function Home() {
       <div className="gallery-caption">
         <div>
           <small>Реализиран проект</small>
-          <h3>Фотоволтаична система край морето</h3>
+          <h3>Частен дом, гр. Приморско</h3>
+          <p className="gallery-description">
+            Баластна система изток-запад с 40 панела Jinko 450Wp.
+            Високоволтов инвертор 20kW, 6 високоволтови батерии Deye и BMS блок
+            за управление. По желание на клиента е инсталирана и зарядна станция
+            за електромобил.
+          </p>
         </div>
         <span className="gallery-arrow">↗</span>
       </div>
@@ -220,6 +247,26 @@ export default function Home() {
               <div className="team-card-copy">
                 <h3>Николай Киров</h3>
                 <p>Главен логистик и доставки</p>
+              </div>
+            </article>
+
+            <article className="team-card">
+              <div className="team-photo">
+                <img src="/team/stefan-malinov.webp" alt="Стефан Малинов" />
+              </div>
+              <div className="team-card-copy">
+                <h3>Стефан Малинов</h3>
+                <p>Ръководител монтажна група 1</p>
+              </div>
+            </article>
+
+            <article className="team-card">
+              <div className="team-photo">
+                <img src="/team/petyo-petkov.webp" alt="Петьо Петков" />
+              </div>
+              <div className="team-card-copy">
+                <h3>Петьо Петков</h3>
+                <p>Ръководител монтажна група 2</p>
               </div>
             </article>
           </div>
